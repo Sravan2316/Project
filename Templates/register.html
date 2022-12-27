@@ -16,20 +16,30 @@
 </div>
 <div class="wrapper">
   <div class="inner-warpper text-center">
-    <h2 class="title">Login to your account</h2>
-    <form action="/login-form" method="post">
+    <h2 class="title">Registration</h2>
+    <form action="/register" method="post">
       <div class="input-group">
         
-        <input class="form-control" name="userName" id="userName" type="text" placeholder=" username " />
+        <input class="form-control" name="username" id="userName" type="text" placeholder=" username " />
         <span class="lighting"></span>
       </div>
       <div class="input-group">
         <!-- <label class="palceholder" for="userPassword">Password</label> -->
-        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder=" password" />
+        <input class="form-control" name="password" id="userPassword" type="password" placeholder=" password" />
         <span class="lighting"></span>
       </div>
-
-      <button type="submit" id="login">Login</button>
+      <div class="input-group">
+        
+        <input class="form-control" name="email" id="email" type="email" placeholder="email " />
+        <span class="lighting"></span>
+      </div>
+      <div class="input-group">
+        <!-- <label class="palceholder" for="userPassword">Password</label> -->
+        <input class="form-control" name="phone" id="phone" type="text" placeholder="phone no" />
+        <span class="lighting"></span>
+      </div>
+      
+      <button type="submit" >Register</button>
       <div class="clearfix supporter">
         <div class="pull-left remember-me">
           <input id="rememberMe" type="checkbox">
@@ -41,7 +51,7 @@
 
   </div>
   <div class="signup-wrapper text-center">
-    <a href="/register">Don't have an accout? <span class="text-primary">Create One</span></a>
+    <a href="/index">Already have an accout? <span class="text-primary">Login</span></a>
   </div>
   <h1>{{info}}</h1>
 </div>
