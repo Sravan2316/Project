@@ -1,15 +1,15 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,redirect,url_for
 import sqlite3
 
 app = Flask( __name__)
 
 @app.route('/')
-def demo():
-    return render_template ('index.html')
+def home():
+    return render_template("home.html")
 
 @app.route('/index')
 def index():
-    return render_template ('index.html')
+    return render_template('index.html')
 
 
 
@@ -34,5 +34,5 @@ def login():
 
 
 if __name__=='__main__':
-    app.run(port=5001)
+    app.run(debug=True)
 
